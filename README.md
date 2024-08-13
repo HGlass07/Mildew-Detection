@@ -101,6 +101,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 - In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
 - You can break the credits section up into Content and Media, depending on what you have included in your project.
 
+###CodeInstitute 
+- Repo template and raw image data from Handbook: Mildew Detection in Cherry Leaves
+- Data cleaning and set splitting code from the 'data collection' and 'data preperation' sections of the malaria detection walkthrough project
+  
+
 ### Content
 
 - The text for the Home page was taken from Wikipedia Article A.
