@@ -1,5 +1,3 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 ## Template Instructions
 
 Welcome,
@@ -47,6 +45,11 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 - The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
+
+
+------------
+
+
 ## Business Requirements
 
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. The company has thousands of cherry trees located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
@@ -58,15 +61,21 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+- As the leaves of cherry trees can be manually differentiated by the visible presence of powdery mildew, it is believed that a classification machine learning model can expedite this process by instantly discerning if mildew is present on a leaf. This would be achieved through an average image study, with the accuracy of the model informing the validity of the hypothesis. 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+- Display the mean and standard deviation images for mildew-infected and uninfected cherry leaves.
+- Display the difference between average mildew-infected and uninfected leaves.
+- Display an image montage for either mildew-infected or uninfected leaves.
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+- We are seeking to create a supervised, 2-class image classification model in order to achieve the above tasks.
+- The goal of this will be to allow the client to quickly and accurtely differentiate healthy and non-healthy cherry leaves. It has been agreed with the client that the model must have an accuracy rating of at least 97%.
+- An API dashboard will be needed to display the results and outputs of the model.
+- The benefits of a successfull prediction model will be that the client is able to more reliably supply a quality product. The client will also be able to use the model as a basis for potentially carrying out similar classification tasks with other crops.
+- The data was provided by the client under an NDA (non-disclosure agreement), therefore the data should not be share with those not officially involved in the project. There are no additional ethical concerns surrounding the data used.
 
 ## Dashboard Design
 
