@@ -113,6 +113,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 ###CodeInstitute 
 - Repo template and raw image data from Handbook: Mildew Detection in Cherry Leaves
 - Data cleaning and set splitting code from the 'data collection' and 'data preperation' sections of the malaria detection walkthrough project
+- Code for displaying graph of number of images in sets from the 'image augmentation' section of the malaria detection walkthrough project
   
 
 ### Content
