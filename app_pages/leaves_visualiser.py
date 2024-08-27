@@ -23,4 +23,13 @@ def leaves_visualiser_body():
     difference_image = Image.open("outputs/v1/avg_infected_uninfected_diff.png")
     st.image(difference_image, caption="Difference Image", use_column_width=True)
 
+    # Montage Generator
+    st.header("Montage Generator")
+    label_selection = st.selectbox("Select Leaf Type for Montage:", ("Healthy (Label 0)", "Infected (Label 1)"))
 
+    if label_selection == "Healthy (Label 0)":
+        montage_image = Image.open("outputs/v1/montage_label_0.png") 
+        st.image(montage_image, caption="Montage of Healthy Leaves", use_column_width=True)
+    else:
+        montage_image = Image.open("outputs/v1/montage_label_1.png") 
+        st.image(montage_image, caption="Montage of Infected Leaves", use_column_width=True)
