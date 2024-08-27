@@ -22,3 +22,5 @@ def leaves_visualiser_body():
     st.header("Difference Image Between Infected and Healthy Leaves")
     difference_image = Image.open("outputs/v1/avg_infected_uninfected_diff.png")
     st.image(difference_image, caption="Difference Image", use_column_width=True)
+
+
