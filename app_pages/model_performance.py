@@ -28,5 +28,5 @@ def model_performance_body():
     st.image(model_loss, caption='Model Training Losses')
     st.write("---")
 
-    # Load model evaluation metrics from the pickle file
+    st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
