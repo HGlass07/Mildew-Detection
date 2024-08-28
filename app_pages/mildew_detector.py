@@ -51,3 +51,10 @@ def mildew_detector_body():
                 "Probability": f"{probability:.4f}"
             }, ignore_index=True)
 
+        # convert to cvs and encode to base64 for download
+        csv_report = report_dataframe.to_csv(index=False)
+
+        b64 = base64.b64encode(csv_report.encode()).decode()
+        href = f'<a href="data:file/csv;base64,{b64}" download="mildew_detection_report.csv">Download Report</a>'
+
+        st.markdown(href, unsafe_allow_html=True)
