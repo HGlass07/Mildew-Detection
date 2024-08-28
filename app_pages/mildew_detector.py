@@ -3,6 +3,8 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 from PIL import Image
+import pandas as pd
+import base64
 
 # load and preprocess an image
 def load_and_prep_image(image, target_size=(100, 100)):
@@ -35,8 +37,17 @@ def mildew_detector_body():
         st.image(images, caption=[file.name for file in uploaded_files], use_column_width=True)
         
         predictions = predict_on_images(images, model)
+
+        report_dataframe = pd.DataFrame(columns=["Name", "Result", "Probability"])
         
         for i, prediction in enumerate(predictions):
             label = "Healthy" if prediction < 0.5 else "Infected"
             probability = 1 - prediction if label == "Healthy" else prediction
             st.write(f"Image {uploaded_files[i].name} is predicted to be: **{label}** with a probability of **{probability:.4f}**")
+
+            report_dataframe = report_dataframe.append({
+                "Name": uploaded_files[i].name,
+                "Result": label,
+                "Probability": f"{probability:.4f}"
+            }, ignore_index=True)
+
