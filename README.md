@@ -1,6 +1,8 @@
 
 # Mildew Detection Project
 
+## Live Link - https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -47,7 +49,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: `https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/`
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
