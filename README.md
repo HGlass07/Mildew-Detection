@@ -26,7 +26,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 - Display the mean and standard deviation images for mildew-infected and uninfected cherry leaves.
 - Display the difference between average mildew-infected and uninfected leaves.
 - Display an image montage for either mildew-infected or uninfected leaves.
-- Build an ML model and use it to perform predictions based on whether leaves are infected or not 
+- Build an ML model and use it to perform predictions based on whether leaves are infected or not, with an accuracy rating of at least 97%.
 
 ## ML Business Case
 
