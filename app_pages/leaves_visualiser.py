@@ -9,8 +9,16 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 def leaves_visualiser_body():
-    st.write("This is page 2")
     st.title("Leaf Image Visualisations")
+
+    st.info(
+        f"Below are the results of the study to visualise the " 
+        "difference between healthy and unhealthy leaves. Displayed are: ")
+
+    st.success (f"* Images showing the mean and variability of images in both sets. ")
+    st.success (f"* Images illustrating the differences between average healthy. "
+                "and unhealthy leaves.")  
+    st.success (f"* An image montage selector with both sets. ") 
 
     # display Mean and Variability Images
     st.header("Mean and Variability Images")

@@ -24,6 +24,13 @@ def predict_on_images(images, model):
     return predictions
 
 def mildew_detector_body():
+
+    st.info(
+        f" New cherry leaf images can be uploaded below in order to "
+        "use the model to predict whether powdery mildew is present. "
+        "Uploaded files must be image files. Multiple files can be "
+        "uploaded at once.")
+
     st.title("Image Uploader")
 
     # load model
