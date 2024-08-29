@@ -1,6 +1,8 @@
 
 # Mildew Detection Project
 
+## Live Link - https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -47,7 +49,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: `https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/`
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
@@ -55,8 +57,21 @@ To save time in this process, the IT team suggested an ML system that detects in
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
+
+Additional steps for using heroku-20 stack(needed to support python 3.8.18):
+1. Log in to Heroku and create an App
+2. At the Deploy tab, select GitHub as the deployment method.
+3. Select your repository name and click Search. Once it is found, click Connect.
+4. Go to heroku, manage account, applications -> create authorisation
+5. Enter the following into your IDE and use your authorisation code for the password: **heroku login -i** 
+6. Enter the following into your IDE: **curl https://cli-assets.heroku.com/install.sh | sh**
+7. Initialise with git in your IDE: **git init**
+8. Enter the following into your IDE to confirm your app is there: **heroku apps**
+9. Add your app remotely: **heroku git:remote -a your_app_name**
+10. Set stack to heroku-20: **heroku stack:set heroku-20**
+11. 4. Select the branch you want to deploy, then click Deploy Branch.
+
+N/B - If the slug size is too large, then add large files not required for the app to the .slugignore file.
 
 ## Credits
 
