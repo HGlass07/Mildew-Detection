@@ -26,7 +26,7 @@ def project_summary_body():
         f"average image study, with the accuracy of the model informing the "
         f"validity of the hypothesis. ")
 
-    st.write("### Conclusions")
+    st.write("### Conclusions and Outcomes")
     st.success(
         f"Overall the project has been successful when measured against the business "
         f"outcomes stated by the client. \n"
