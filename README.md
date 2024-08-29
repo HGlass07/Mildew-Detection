@@ -23,10 +23,12 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
+### Business Requirement 1: Data Visualisation
 - Display the mean and standard deviation images for mildew-infected and uninfected cherry leaves.
 - Display the difference between average mildew-infected and uninfected leaves.
 - Display an image montage for either mildew-infected or uninfected leaves.
-- Build an ML model and use it to perform predictions based on whether leaves are infected or not 
+### Business Requirement 2: Classification and Prediction
+- Build an ML model and use it to perform predictions based on whether leaves are infected or not, with an accuracy rating of at least 97%.
 
 ## ML Business Case
 
@@ -43,7 +45,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+- No unfixed bugs were detected 
 
 ## Deployment
 
