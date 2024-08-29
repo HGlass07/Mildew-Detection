@@ -1,27 +1,11 @@
 import streamlit as st
-import numpy as np
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import img_to_array
 from PIL import Image
 import pandas as pd
 import base64
+from src.data_management import load_and_prep_image
+from src.data_management import predict_on_images
 
-# load and preprocess an image
-def load_and_prep_image(image, target_size=(100, 100)):
-    image = image.resize(target_size)
-    image = img_to_array(image)
-    image = image / 255.0 
-    image = np.expand_dims(image, axis=0)
-    return image
-
-# predict on uploaded images
-def predict_on_images(images, model):
-    predictions = []
-    for image in images:
-        img_array = load_and_prep_image(image)
-        prediction = model.predict(img_array)
-        predictions.append(prediction[0][0])
-    return predictions
 
 def mildew_detector_body():
 
