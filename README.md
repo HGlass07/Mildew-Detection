@@ -40,7 +40,12 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Dashboard Design
 
-### Page 1 - G
+### Page 1 - Project Summary
+
+Page includes some general background on the project, the client, and the reason for the project's inception. 
+- The business requirements of the project are stated, as well as details of the dataset.
+- The project hypothesis is outlined, linking the business needs with the requirements of the project
+- The conclusions of the project are stated, with success measured against the desired business outcomes.
 
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
