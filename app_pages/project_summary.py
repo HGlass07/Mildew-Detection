@@ -11,6 +11,8 @@ def project_summary_body():
         f"contains powdery mildew. To save time, the IT team has suggested "
         f"that a machine learning system could be used to detect the pressence "
         f"of mildew on leaf images\n\n"
+        f"The dataset provided was comprised of a total of 4208 images "
+        f"split evenly between healthy and unhealthy sets.\n\n"
         f"**Business Requirements: **\n\n"
         f"- The client is interested in conducting a study to visually differentiate "
         "a healthy cherry leaf from one with powedery mildew.\n"
