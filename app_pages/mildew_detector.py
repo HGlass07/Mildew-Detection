@@ -15,6 +15,8 @@ def mildew_detector_body():
         "Uploaded files must be image files. Multiple files can be "
         "uploaded at once.")
 
+    st.write("The dataset for prediction can be downloaded [here](https://www.kaggle.com/datasets/henryglasspool/cherry-leaves)")
+
     st.title("Image Uploader")
 
     # load model
