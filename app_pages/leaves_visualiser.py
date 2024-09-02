@@ -43,7 +43,7 @@ def leaves_visualiser_body():
     st.info(
         f"The difference image confirms the pressence of visual distinctions "
         f"between the leaves, shown by the purple colouring. However, we can "
-        f"see that the differences are likely too subtle to use for manual "
+        f"see that the differences are likely too subtle to use for accurate "
         f"predictions. This confirms the need for further analysis using "
         f"an ML model")
 
