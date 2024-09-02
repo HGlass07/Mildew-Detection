@@ -90,14 +90,15 @@ Additional steps for using heroku-20 stack(needed to support python 3.8.18):
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
-4. Go to heroku, manage account, applications -> create authorisation
+4. Go to Heroku, manage account, applications -> create authorisation
 5. Enter the following into your IDE and use your authorisation code for the password: **heroku login -i** 
 6. Enter the following into your IDE: **curl https://cli-assets.heroku.com/install.sh | sh**
 7. Initialise with git in your IDE: **git init**
 8. Enter the following into your IDE to confirm your app is there: **heroku apps**
-9. Add your app remotely: **heroku git:remote -a your_app_name**
+9. Initialise app remotely: **heroku git:remote -a your_app_name**
 10. Set stack to heroku-20: **heroku stack:set heroku-20**
-11. 4. Select the branch you want to deploy, then click Deploy Branch.
+11. Commit changes and sync with github
+12. Go back to Heroku, select the branch you want to deploy, then click Deploy Branch.
 
 N/B - If the slug size is too large, then add large files not required for the app to the .slugignore file.
 
