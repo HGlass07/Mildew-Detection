@@ -12,17 +12,17 @@ def leaves_visualiser_body():
         f"Below are the results of the study to visualise the " 
         "difference between healthy and unhealthy leaves. Displayed are: ")
 
-    st.success (f"* Images showing the mean and variability of images in both sets. ")
-    st.success (f"* Images illustrating the differences between average healthy. "
+    st.success (f"* Images showing the mean and variability of images for both labels. ")
+    st.success (f"* Images illustrating the differences between average healthy, "
                 "and unhealthy leaves.")  
-    st.success (f"* An image montage selector with both sets. ") 
+    st.success (f"* An image montage selector with both labels. ") 
 
     # display Mean and Variability Images
     st.header("Mean and Variability Images")
     st.info(
         f"We can see from the average images that the healthy "
         f"leaf appears a uniform gree colour, whereas the infected "
-        f"fdoes show some difference in the pattern, particularly "
+        f"does show some difference in the pattern, particularly "
         f"across the leaf, which is exaggerated further in the "
         f"variability image.\n\n"
         f"However, given the generally variable features of the leaves, "
