@@ -1,7 +1,7 @@
 
 # Mildew Detection Project
 
-## Live Link - https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/
+Live Link - https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/
 
 ## Dataset Content
 
@@ -33,9 +33,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## ML Business Case
 
 - We are seeking to create a supervised, 2-class image classification model in order to achieve the above tasks.
-- The goal of this will be to allow the client to quickly and accurtely differentiate healthy and non-healthy cherry leaves. It has been agreed with the client that the model must have an accuracy rating of at least 97%.
+- The goal of this will be to allow the client to quickly and accurately differentiate healthy and non-healthy cherry leaves. It has been agreed with the client that the model must have an accuracy rating of at least 97%.
 - An API dashboard will be needed to display the results and outputs of the model.
-- The benefits of a successfull prediction model will be that the client is able to more reliably supply a quality product. The client will also be able to use the model as a basis for potentially carrying out similar classification tasks with other crops.
+- The benefits of a successful prediction model will be that the client is able to more reliably supply a quality product. The client will also be able to use the model as a basis for potentially carrying out similar classification tasks with other crops.
 - The data was provided by the client under an NDA (non-disclosure agreement), therefore the data should not be share with those not officially involved in the project. There are no additional ethical concerns surrounding the data used.
 
 ## Dashboard Design
@@ -64,8 +64,8 @@ The mildew detection page fulfils business requirement 2, providing the ability 
 
 ### Page 4 - ML Performance
 
-This page summerises the performance metrics of the machine learning model used in the project. Show are:
-- A bar graph summerising the data split between the different sets, per label
+This page summarises the performance metrics of the machine learning model used in the project. Show are:
+- A bar graph summarising the data split between the different sets, per label
 - Line graphs displaying the accuracy and loss trends for the model
 - A summary of the generalised performance of the model on the test data set 
 
@@ -107,7 +107,7 @@ N/B - If the slug size is too large, then add large files not required for the a
 
 ### CodeInstitute 
 - Repo template and raw image data from Handbook: Mildew Detection in Cherry Leaves
-- Data cleaning and set splitting code from the 'data collection' and 'data preperation' sections of the malaria detection walkthrough project
+- Data cleaning and set splitting code from the 'data collection' and 'data preparation' sections of the malaria detection walkthrough project
 - Code for displaying graph of number of images in sets from the 'image augmentation' section of the malaria detection walkthrough project
 - Code for ML performance dashboard page repurposed from ML performance page from the malaria detection walkthrough project
   
