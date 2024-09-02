@@ -19,7 +19,7 @@ def mildew_detector_body():
 
     st.title("Image Uploader")
 
-    # load model
+    #load model
     model = load_model("outputs/v1/mildew_detector_model.h5")
     
     uploaded_files = st.file_uploader("Choose images...", type=["jpg", "png", "jpeg"], accept_multiple_files=True)
@@ -44,7 +44,7 @@ def mildew_detector_body():
                 "Probability": f"{probability:.4f}"
             }, ignore_index=True)
 
-        # convert to cvs and encode to base64 for download
+        #convert to cvs and encode to base64 for download
         csv_report = report_dataframe.to_csv(index=False)
 
         b64 = base64.b64encode(csv_report.encode()).decode()

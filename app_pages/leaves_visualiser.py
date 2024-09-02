@@ -17,7 +17,7 @@ def leaves_visualiser_body():
                 "and unhealthy leaves.")  
     st.success (f"* An image montage selector with both labels. ") 
 
-    # display Mean and Variability Images
+    #display Mean and Variability Images
     st.header("Mean and Variability Images")
     st.info(
         f"We can see from the average images that the healthy "
@@ -38,7 +38,7 @@ def leaves_visualiser_body():
     st.subheader("Infected Leaves (Label 1)")
     st.image(variability_image_label_1, caption="Mean and Variability Image - Infected", use_column_width=True)
 
-    # display Difference Image
+    #display Difference Image
     st.header("Difference Image Between Infected and Healthy Leaves")
     st.info(
         f"The difference image confirms the pressence of visual distinctions "
@@ -50,7 +50,7 @@ def leaves_visualiser_body():
     difference_image = Image.open("outputs/v1/avg_infected_uninfected_diff.png")
     st.image(difference_image, caption="Difference Image", use_column_width=True)
 
-    # display montage
+    #display montage
     st.header("Montage Generator")
     label_selection = st.selectbox("Select Leaf Type for Montage:", ("Healthy (Label 0)", "Infected (Label 1)"))
 
