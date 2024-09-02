@@ -1,7 +1,7 @@
 
 # Mildew Detection Project
 
-## Live Link - https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/
+Live Link - https://mildewdetectionhg-d519acc0f8b3.herokuapp.com/
 
 ## Dataset Content
 
@@ -33,9 +33,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## ML Business Case
 
 - We are seeking to create a supervised, 2-class image classification model in order to achieve the above tasks.
-- The goal of this will be to allow the client to quickly and accurtely differentiate healthy and non-healthy cherry leaves. It has been agreed with the client that the model must have an accuracy rating of at least 97%.
+- The goal of this will be to allow the client to quickly and accurately differentiate healthy and non-healthy cherry leaves. It has been agreed with the client that the model must have an accuracy rating of at least 97%.
 - An API dashboard will be needed to display the results and outputs of the model.
-- The benefits of a successfull prediction model will be that the client is able to more reliably supply a quality product. The client will also be able to use the model as a basis for potentially carrying out similar classification tasks with other crops.
+- The benefits of a successful prediction model will be that the client is able to more reliably supply a quality product. The client will also be able to use the model as a basis for potentially carrying out similar classification tasks with other crops.
 - The data was provided by the client under an NDA (non-disclosure agreement), therefore the data should not be share with those not officially involved in the project. There are no additional ethical concerns surrounding the data used.
 
 ## Dashboard Design
@@ -47,9 +47,27 @@ Page includes some general background on the project, the client, and the reason
 - The project hypothesis is outlined, linking the business needs with the requirements of the project
 - The conclusions of the project are stated, with success measured against the desired business outcomes.
 
+### Page 2 - Leaves Visualiser
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+This page displays the image plots generated from the DataVisualisation notebook, which answer business requirement 1. Shown are:
+- Images displaying the mean and variance for healthy leaves(set 0), and unhealthy leaves(set 1)
+- An image showing the visual difference between an average healthy and unhealthy leaf
+- An image montage creator, with the option to generate an image montage of either healthy or unhealthy leaves from the dataset
+
+### Page 3 - Mildew Detection
+
+The mildew detection page fulfils business requirement 2, providing the ability for a user to upload images for predicting if mildew is present
+- Includes link to dataset for prediction use
+- Image upload widget, with the ability to upload multiple image files. These are then standardised and fed into the ML model.
+- The images are displayed, with their infection status prediction and probability
+- A button allows the user to download a report with prediction details of the images they have uploaded 
+
+### Page 4 - ML Performance
+
+This page summarises the performance metrics of the machine learning model used in the project. Show are:
+- A bar graph summarising the data split between the different sets, per label
+- Line graphs displaying the accuracy and loss trends for the model
+- A summary of the generalised performance of the model on the test data set 
 
 ## Unfixed Bugs
 
@@ -89,7 +107,7 @@ N/B - If the slug size is too large, then add large files not required for the a
 
 ### CodeInstitute 
 - Repo template and raw image data from Handbook: Mildew Detection in Cherry Leaves
-- Data cleaning and set splitting code from the 'data collection' and 'data preperation' sections of the malaria detection walkthrough project
+- Data cleaning and set splitting code from the 'data collection' and 'data preparation' sections of the malaria detection walkthrough project
 - Code for displaying graph of number of images in sets from the 'image augmentation' section of the malaria detection walkthrough project
 - Code for ML performance dashboard page repurposed from ML performance page from the malaria detection walkthrough project
   
