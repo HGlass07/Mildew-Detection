@@ -19,6 +19,15 @@ def leaves_visualiser_body():
 
     # display Mean and Variability Images
     st.header("Mean and Variability Images")
+    st.info(
+        f"We can see from the average images that the healthy "
+        f"leaf appears a uniform gree colour, whereas the infected "
+        f"fdoes show some difference in the pattern, particularly "
+        f"across the leaf, which is exaggerated further in the "
+        f"variability image.\n\n"
+        f"However, given the generally variable features of the leaves, "
+        f"this would not be sufficient to reliably tell leaves apart with "
+        f"the required degree of accuracy.")
 
     variability_image_label_0 = Image.open("outputs/v1/variability_image_label_0.png")
     variability_image_label_1 = Image.open("outputs/v1/variability_image_label_1.png")
@@ -31,6 +40,13 @@ def leaves_visualiser_body():
 
     # display Difference Image
     st.header("Difference Image Between Infected and Healthy Leaves")
+    st.info(
+        f"The difference image confirms the pressence of visual distinctions "
+        f"between the leaves, shown by the purple colouring. However, we can "
+        f"see that the differences are likely too subtle to use for manual "
+        f"predictions. This confirms the need for further analysis using "
+        f"an ML model")
+
     difference_image = Image.open("outputs/v1/avg_infected_uninfected_diff.png")
     st.image(difference_image, caption="Difference Image", use_column_width=True)
 
