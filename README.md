@@ -47,9 +47,27 @@ Page includes some general background on the project, the client, and the reason
 - The project hypothesis is outlined, linking the business needs with the requirements of the project
 - The conclusions of the project are stated, with success measured against the desired business outcomes.
 
+### Page 2 - Leaves Visualiser
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+This page displays the image plots generated from the DataVisualisation notebook, which answer business requirement 1. Shown are:
+- Images displaying the mean and variance for healthy leaves(set 0), and unhealthy leaves(set 1)
+- An image showing the visual difference between an average healthy and unhealthy leaf
+- An image montage creator, with the option to generate an image montage of either healthy or unhealthy leaves from the dataset
+
+### Page 3 - Mildew Detection
+
+The mildew detection page fulfils business requirement 2, providing the ability for a user to upload images for predicting if mildew is present
+- Includes link to dataset for prediction use
+- Image upload widget, with the ability to upload multiple image files. These are then standardised and fed into the ML model.
+- The images are displayed, with their infection status prediction and probability
+- A button allows the user to download a report with prediction details of the images they have uploaded 
+
+### Page 4 - ML Performance
+
+This page summerises the performance metrics of the machine learning model used in the project. Show are:
+- A bar graph summerising the data split between the different sets, per label
+- Line graphs displaying the accuracy and loss trends for the model
+- A summary of the generalised performance of the model on the test data set 
 
 ## Unfixed Bugs
 
